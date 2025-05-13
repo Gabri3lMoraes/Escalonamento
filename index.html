@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escalonamento</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="formulario">
             <h1 class="titulo">Qual o Tipo do Escalonamento?</h1>
-            <select name="Escalonamento" id="es">
-                <option value=""></option>
-                <option class="option" value="1">1. FCFS (First-Come, First-Served)</option>
-                <option  class="option"  value="2">SJF (Shortest Job First)</option>
-                <option class="option" value="3">Round Robin (RR)</option>
-                <option class="option" value="4">Prioridade</option>
-                <option class="option" value="5">Multinível por Filas (Multilevel Queue)</option>
-                <option class="option" value="6">Multinível com Feedback (Multilevel Feedback Queue)</option>
-                <option class="option" value="7">Escalonamento por Loteria (Lottery Scheduling)</option>
-            </select>
-            <button onclick="clickei()" class="botao">START</button>
+            <div class="opp">
+                <select name="Escalonamento" id="es">
+                    <option value=""></option>
+                    <option class="option" value="1">FCFS (First-Come, First-Served)</option> 
+                    <option class="option" value="2">SJF (Shortest Job First)</option>
+                    <option class="option" value="s">Round Robin (RR)</option>
+                    <option class="option" value="4">Prioridade</option>
+                    <option class="option" value="5">Multinível por Filas (Multilevel Queue)</option>
+                    <option class="option" value="6">Multinível com Feedback (Multilevel Feedback Queue)</option>
+                    <option class="option" value="7">Escalonamento por Loteria (Lottery Scheduling)</option>
+                </select>
+                <div class="opcoes">
+                    <label class="atributo" for="">Preemptivo</label>
+                    <input type="text" id="pre">
+
+                    <label class="atributo" for="">quantum</label>
+                    <select name="" id="qua">
+                        <option value="0"></option>
+                        <option value="1">1 Segundo</option>
+                        <option value="2">2 Segundos</option>
+                        <option value="3">3 Segundos</option>
+                        <option value="4">4 Segundos</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <button onclick="salvanumber()" class="botao">START</button>
             <p class="description oculto"></p>
         </div>
 
 
     </div>
-<script src="java.js"></script>
+    <script src="java.js"></script>
 </body>
+
 </html>
