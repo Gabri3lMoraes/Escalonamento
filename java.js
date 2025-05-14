@@ -51,22 +51,6 @@ seleto.addEventListener('change', function(e){
         document.getElementById("qua").options[3].hidden = true;
         document.getElementById("qua").options[4].hidden = true;
       }else if (valorSelecionado === '5') {
-        descricao.textContent = 'Os processos são divididos em diferentes filas com base em características como tipo de processo. Cada fila pode ter seu próprio algoritmo de escalonamento. Pode ser preemptivo ou não, dependendo da fila.';
-         preemptivo.value = "✅ Sim"
-        option.textContent = "✅ Sim"
-        document.getElementById("qua").options[2].hidden = false;
-        document.getElementById("qua").options[1].hidden = false;
-        document.getElementById("qua").options[3].hidden = false;
-        document.getElementById("qua").options[4].hidden = false;
-      }else if (valorSelecionado === '6') {
-        descricao.textContent = 'Uma variação do Multilevel Queue, onde os processos podem ser movidos entre as filas com base em seu comportamento (tempo de CPU ou interatividade). Evita "starvation" e é geralmente preemptivo.';
-         preemptivo.value = "✅ Sim"
-        option.textContent = "✅ Sim"
-        document.getElementById("qua").options[2].hidden = false;
-        document.getElementById("qua").options[1].hidden = false;
-        document.getElementById("qua").options[3].hidden = false;
-        document.getElementById("qua").options[4].hidden = false;
-      }else if (valorSelecionado === '7') {
         descricao.textContent = 'é um algoritmo de escalonamento preemptivo baseado em sorteios. Cada processo recebe um ou mais "bilhetes" de acordo com sua prioridade, e o sistema sorteia aleatoriamente um bilhete para decidir qual processo será executado. Processos com mais bilhetes têm maior chance de ser escolhidos, mas a seleção é aleatória. Esse método é simples, justo e flexível, mas pode ser imprevisível e gerar starvation para processos com poucos bilhetes.';
          preemptivo.value = "✅ Sim"
         option.textContent = "✅ Sim"
@@ -107,6 +91,12 @@ function salvanumber(){
       break;
     case "3":
       window.location.href = "theards.html";
+      break;
+    case "4":
+      window.location.href = "threads4.html";
+      break;
+    case "5":
+      window.location.href = "threads5.html";
       break;
     default:
       alert("Por favor, selecione um algoritmo.");

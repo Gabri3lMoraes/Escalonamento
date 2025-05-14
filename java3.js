@@ -34,7 +34,7 @@ let intervalo = null;
 function getRandomTime() {
   return Math.floor(Math.random() * 10) + 1;
 }
-
+console.log(processos)
 function startFC() {
   const nomeH1 = document.querySelector(".th").innerText.trim();
   console.log(nomeH1)

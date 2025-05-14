@@ -12,7 +12,7 @@ let intervalo = null;
 function getRandomTime() {
     return Math.floor(Math.random() * 10) + 1;
 }
-
+  console.log(processos)
 function startSJF() {
     const nomeH1 = document.querySelector(".th").innerText.trim();
     if (nomeH1 !== "SJF (Shortest Job First)") {
